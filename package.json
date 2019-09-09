@@ -1,0 +1,41 @@
+{
+  "name": "pluralize-me",
+  "version": "1.0.0",
+  "description": "A little package for pluralize ir singularize words (Only for english)",
+  "main": "./lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && cross-env BABEL_ENV=production babel src --out-dir lib"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauroerta/pluralize-me.git"
+  },
+  "keywords": [
+    "plural",
+    "plurals",
+    "pluralize",
+    "singular",
+    "singularize"
+  ],
+  "author": "Mauro Erta <mauro@vlkstudio.com> (https://mauroerta.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mauroerta/pluralize-me/issues"
+  },
+  "homepage": "https://github.com/mauroerta/pluralize-me#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.5.0",
+    "cross-env": "^5.1.3",
+    "rimraf": "^2.6.2"
+  }
+}
