@@ -16,7 +16,7 @@ or
 yarn add plurilize-me
 ```
 
-The, you just need to import the singular and plural functions:
+Then, you just need to import the singular and plural functions:
 
 ```javascript
 import { singular, plural } from 'plurilize-me';
