@@ -1,18 +1,21 @@
 import {
-  plurals, singulars, irregulars, uncountables
+  DataObject, plurals, singulars, irregulars, uncountables
 } from './data';
 
-function invertObject(object) {
+function invertObject(object: DataObject) : DataObject {
   const keys = Object.keys(object);
-  const response = {};
-  keys.forEach((key) => { response[object[key]] = key; });
+  const response: DataObject = {};
+  keys.forEach((key: string) => {
+    const newKey = object[key];
+    response[newKey] = key;
+  });
   return response;
 }
 
-function singular(string) {
+function singular(string: string) {
   const notRegulars = invertObject(irregulars);
-  const irregularsKeys = Object.keys(notRegulars);
-  const singularKeys = Object.keys(singulars);
+  const irregularsKeys: string[] = Object.keys(notRegulars);
+  const singularKeys: string[] = Object.keys(singulars);
 
   if (!string) {
     return string;
@@ -40,7 +43,7 @@ function singular(string) {
   return string;
 }
 
-function plural(string) {
+function plural(string: string) {
   const response = string;
   const irregularsKeys = Object.keys(irregulars);
   const pluralKeys = Object.keys(plurals);

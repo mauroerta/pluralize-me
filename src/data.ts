@@ -1,4 +1,8 @@
-const plurals = {
+interface DataObject {
+  [key:string]: string;
+}
+
+const plurals: DataObject = {
   '(quiz)$': '$1zes',
   '^(ox)$': '$1en',
   '([m|l])ouse$': '$1ice',
@@ -19,7 +23,7 @@ const plurals = {
   '([^s]+)$': '$1s'
 };
 
-const singulars = {
+const singulars: DataObject = {
   '(quiz)zes$': '$1',
   '^(ox)en$': '$1',
   '^([m|l])ice$': '$1ouse',
@@ -37,7 +41,7 @@ const singulars = {
   '(octop)i$': '$1us'
 };
 
-const irregulars = {
+const irregulars: DataObject = {
   move: 'moves',
   foot: 'feet',
   goose: 'geese',
@@ -48,7 +52,7 @@ const irregulars = {
   person: 'people'
 };
 
-const uncountables = [
+const uncountables: string[] = [
   'sheep',
   'fish',
   'deer',
@@ -77,5 +81,5 @@ const uncountables = [
 ];
 
 export {
-  plurals, singulars, irregulars, uncountables
+  DataObject, plurals, singulars, irregulars, uncountables
 };
