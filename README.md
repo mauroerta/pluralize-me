@@ -1,25 +1,25 @@
 # 🍞 🍷 pluralizeME
 
-plurilizeME module helps you to singularize or pluralize a given word.
+pluralizeME module helps you to singularize or pluralize a given word.
 
 # ⚙ How to use
 
-First of all, install plurilize-me
+First of all, install pluralize-me
 
 ```bash
-npm i plurilize-me
+npm i pluralize-me
 ```
 
 or
 
 ```bash
-yarn add plurilize-me
+yarn add pluralize-me
 ```
 
 Then, you just need to import the singular and plural functions:
 
 ```javascript
-import { singular, plural } from 'plurilize-me';
+import { singular, plural } from 'pluralize-me';
 ```
 
 And use it!
@@ -34,7 +34,7 @@ const singularWord = singular(`feet`); // Will return the string `foot`
 # 🎓 Example
 
 ```javascript
-import { singular, plural } from 'plurilize-me';
+import { singular, plural } from 'pluralize-me';
 
 const singulars = [
   'foot',
