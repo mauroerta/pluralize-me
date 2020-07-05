@@ -30,6 +30,7 @@ const singulars: DataObject = {
   '(matr|vert)ices$': '$1ix',
   '(ind)ices$': '$1ex',
   '(us)es$': '$1',
+  '(x|ch|ss|sh)es$': '$1',
   '([^aeiouy]|qu)ies$': '$1y',
   '([^s]+)s$': '$1',
   '(?:([^f])fe|([lr])f)ves$': '$1$2',
